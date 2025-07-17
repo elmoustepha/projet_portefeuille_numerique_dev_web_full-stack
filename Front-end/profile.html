@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Profil Utilisateur - Portefeuille Numérique</title>
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+<body>
+    <div class="menu5">
+    <nav class="menu">
+
+        <a class="active" href="index.html"> <i class="fas fa-home"></i>Accueil</a>
+
+        <a href="accounts.html"><i class="fas fa-wallet"></i>Gestion de Portefeuille</a>
+
+        <a href="tempsreel.html"><i class="fas fa-chart-line"></i>Cours en Temps Réel </a>
+
+        <a href="profile.html"><i class="fas fa-user"></i>Profil Utilisateur</a>
+    
+    </nav>
+
+
+   <div class="profile">
+    <br><br><br>
+    <section>
+    <h2>Modifier un utilisateur</h2>
+    <form id="userForm">
+        <input type="hidden" id="userId"><br>
+        <label for="name">Nom</label><br> <!-- Champ pour le nom de l'utilisateur -->
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email</label><br> <!-- Champ pour l'email de l'utilisateur -->
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Mot de passe</label> <br> <!-- Champ pour le mot de passe -->
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="confirmPassword">Confirmer le mot de passe</label> <br> <!-- Champ pour la confirmation du mot de passe -->
+        <input type="password" id="confirmPassword" required>
+        <br>
+        <button class="cree" type="button" onclick="submitForm()">Mettre à jour</button> <!-- Bouton pour soumettre le formulaire -->
+    </form>
+    </section>
+
+    
+    <br>
+
+    <section>
+    <h2>Tous les utilisateurs :</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="userTable">
+            <!-- Ce tableau sera rempli dynamiquement -->
+        </tbody>
+    </table>
+    </section>
+ 
+   </div>
+    </div>
+    <script src="profile.js"></script>  
+</body>
+</html>

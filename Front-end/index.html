@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="index.css">
+    <title> Page D'accueil - Portefeuille Numérique  </title>
+</head>
+<body>
+    <div class="menu1">
+  <!-- balise nav pour la menu    -->
+    <nav class="menu">
+
+        <a class="active" href="index.html"> <i class="fas fa-home"></i>Accueil</a>
+
+        <a href="accounts.html"><i class="fas fa-wallet"></i>Gestion de Portefeuille</a>
+
+        <a href="tempsreel.html"><i class="fas fa-chart-line"></i>Cours en Temps Réel </a>
+
+        <a href="profile.html"><i class="fas fa-user"></i>Profil Utilisateur</a>
+
+    </nav>
+  <!-- balise div pour les czontenu du page 'Page D'accueil'   -->
+    <div class="accueil">
+  <br><br><br>
+ 
+   <!-- 3eme balise section pour la partie l'inscription  -->
+<section>
+    <h2>Bienvenue</h2>
+    <!-- 2eme formulaire pour l'inscription  -->
+    <form id="userForm">
+      <input type="hidden" id="userId">
+      <label for="name">Nom</label> 
+      <br><!-- Champ pour le nom de l'utilisateur -->
+      <input type="text" id="name" name="name" placeholder="your name" required>
+      <br>
+      <label for="email">Email</label>
+      <br> <!-- Champ pour l'email de l'utilisateur -->
+      <input type="email" id="email" name="email" placeholder="your E-mail" required>
+      <br>
+      <label for="password">Mot de passe</label> 
+      <br><!-- Champ pour le mot de passe -->
+      <input type="password" id="password" name="password" placeholder="your password" required>
+      <br>
+      <label for="confirmPassword">Confirmer le mot de passe</label>
+      <br> <!-- Champ pour la confirmation du mot de passe -->
+      <input type="password" id="confirmPassword" placeholder="your confirm Password " required>
+      <br>
+      <button class="cree" type="button" onclick="submitForm()">S'inscrire  </button> <!-- Bouton pour soumettre le formulaire -->
+  </form>
+</section>
+<br>
+<br>
+   <!-- balise div pour la partie du cryptomonnaie supportees  -->
+
+
+    </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

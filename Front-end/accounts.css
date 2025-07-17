@@ -1,0 +1,149 @@
+body {
+    background-color: rgba(227, 224, 224, 0.856); /* Couleur de fond */
+    font-style: italic;
+    color: rgb(8, 8, 8); /* Couleur du texte */
+    width: 100%; /* Largeur de la page */
+    height: 100vh; /* Hauteur de la page */
+    overflow: hidden; /* Empêcher le défilement */
+    margin: 0; /* Supprimer les marges par défaut */
+}
+
+.menu3 {
+    display: flex; /* Utilisation de flexbox pour la mise en page */
+    height: 100%; /* Hauteur de la section de menu */
+}
+
+.menu {
+    background-color: #171b9c;
+    text-align: center;
+    position: fixed; /* Position fixe pour le menu */
+    width: 98%; /* Largeur du menu */
+    padding: 7px; /* Espacement interne */
+    border-radius: 11px; /* Coins arrondis */
+    overflow-y: auto; /* Ajouter un défilement vertical si nécessaire */
+}
+
+.menu a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    transition: 0.5s; /* Transition pour les effets de survol */
+    color: rgb(243, 239, 239); /* Couleur du texte des liens */
+    margin: 7px; /* Marge entre les liens */
+    border-radius: 8px; /* Coins arrondis pour les liens */
+    font-size: 18px; /* Taille de la police des liens */
+    gap: 20px; /* Espace entre les icônes et le texte */
+}
+
+.menu a:hover {
+    background-color: rgb(251, 4, 4); /* Couleur de fond au survol */
+    padding: 4px;
+    color: rgb(248, 248, 252); /* Couleur du texte au survol */
+    font-size: 18px; /* Augmenter la taille de la police au survol */
+}
+
+.menu a:active {
+    background-color: red; /* Couleur de fond lors du clic */
+    cursor: pointer; /* Changer le curseur lors du clic */
+}
+
+.compte {
+    width: 100%;
+    margin-left: 5%;
+    padding: 20px; /* Espacement interne */
+    overflow-y: auto; /* Ajouter un défilement vertical si nécessaire */
+   
+}
+
+
+section {
+    color: rgb(10, 8, 8); /* Couleur du texte des sections */
+    margin: 0px 30px; /* Marges des sections */
+}
+
+input {
+    width: 25%; /* Largeur des champs de saisie */
+    padding: 5px 8px; /* Espacement interne des champs de saisie */
+    margin: 7px; /* Marge autour des champs de saisie */
+}
+
+button.formulaire {
+    margin: 5px 99px; /* Marge autour des boutons */
+    padding: 9px 13px; /* Espacement interne des boutons */
+    width: auto; /* Largeur des boutons */
+    background-color: #0a516d; /* Couleur de fond des boutons */
+    color: rgb(248, 245, 245); /* Couleur du texte des boutons */
+    border-radius: 6px; /* Coins arrondis pour les boutons */
+    cursor: pointer; /* Changer le curseur lors du survol */
+}
+
+button.affichage {
+    margin: 5px 9px; /* Marge autour des boutons */
+    padding: 11px 19px; /* Espacement interne des boutons */
+    width: auto; /* Largeur des boutons */
+    background-color: #167676; /* Couleur de fond des boutons */
+    color: rgb(18, 17, 17); /* Couleur du texte des boutons */
+    border-radius: 6px; /* Coins arrondis pour les boutons */
+    cursor: pointer; /* Changer le curseur lors du survol */
+}
+
+
+button:active {
+    background-color: red; /* Couleur de fond lors du clic sur le bouton */
+    cursor: pointer; /* Changer le curseur lors du clic */
+}
+
+/* Styles pour les tableaux */
+table {
+    width: auto; /* Largeur des tableaux */
+    border-collapse: collapse; /* Fusionner les bordures des cellules */
+    margin-top: 20px; /* Marge au-dessus des tableaux */
+}
+
+th, td {
+    padding: 10px; /* Espacement interne des cellules */
+    border: 1px solid #f4f5f6; /* Bordure des cellules */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+th {
+    background-color: rgb(38, 40, 36);
+    color: white;
+}
+
+td button {
+    width: auto;
+    background-color: #3f3e3e; /* Couleur de fond des boutons dans les cellules */
+    color: #fff; /* Couleur du texte des boutons dans les cellules */
+    border: none; /* Supprimer la bordure des boutons */
+    border-radius: 4px; /* Coins arrondis pour les boutons */
+    padding: 5px 10px; /* Espacement interne des boutons */
+    cursor: pointer; /* Changer le curseur lors du survol */
+}
+
+td button:hover {
+    background-color: #c82333; /* Couleur de fond au survol des boutons dans les cellules */
+}
+
+
+@media (max-width: 768px){
+    .menu{
+        width: 94%;
+    }
+    section, .compte {
+        margin: 0 4px;
+        padding: 10px;
+    }
+    input{
+        width: 60%;
+    }
+   button.affichage {
+        width: auto;
+        margin: 10px 0;
+    }
+    button.formulaire{
+        width: auto;
+        margin:0 100px; 
+    }
+    table,th,td {
+        font-size: 14px;
+    }
+}

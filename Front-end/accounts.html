@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Gestion des Comptes - Portefeuille Numérique</title>
+    <link rel="stylesheet" href="accounts.css">
+  
+</head>
+<body>
+    <div class="menu3">
+    <nav class="menu">
+
+        <a class="active" href="index.html"> <i class="fas fa-home"></i>Accueil</a>
+        
+        <a href="accounts.html"><i class="fas fa-wallet"></i>Gestion de Portefeuille</a>
+        
+        <a href="tempsreel.html"><i class="fas fa-chart-line"></i>Cours en Temps Réel </a>
+       
+        <a href="profile.html"><i class="fas fa-user"></i>Profil Utilisateur</a>
+       
+    </nav>
+<div class="compte">
+    
+    <br><br><br><br>
+
+    <section>
+        <h2>Ajouter une cryptomonnaie</h2>
+        <form id="addCryptoForm">
+            <input type="text" id="cryptoName" placeholder="Nom de la cryptomonnaie" required><br>
+            <input type="number" id="cryptoQuantite" placeholder="Quantité" required><br>
+            <button class="formulaire" type="button" onclick="addCrypto()">Ajouter</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Vos Cryptomonnaies</h2>
+        <button class="affichage" type="button" onclick="showCryptos()">Afficher les Crypto</button>
+        <table id="cryptoTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Quantité</th>
+                    <th>Date d'ajout</th> <!-- Added Date Column -->
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données seront insérées ici dynamiquement -->
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Transfer une cryptomonnaie</h2>
+        <form id="addTransfersForm">
+            <input type="text" id="sourceName" placeholder="Nom de la source" required><br>
+            <input type="text" id="destinationName" placeholder="Nom de la destination" required><br>
+            <input type="number" id="transfersQuantite" placeholder="Quantité" required><br>
+            <button class="formulaire" type="button" onclick="addTransfers()">Transferer</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Historique des transfers</h2>
+        <button class="affichage" type="button" onclick="showTransfers()">Afficher les Transfers</button>
+        <table id="transferTable">
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Quantité</th>
+                    <th>Date de transfert</th> <!-- Added Date Column -->
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données seront insérées ici dynamiquement -->
+            </tbody>
+        </table>
+    </section>
+
+
+
+</div>
+    </div>
+    <script src="accounts.js"></script> 
+
+</body>
+</html>
